@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 import java.util.*;
+
 public class TicTacToe extends JFrame {
    JFrame frame = new JFrame("Tic-Tac-Toe");
    JButton[] buttons = new JButton[9];
@@ -10,13 +11,15 @@ public class TicTacToe extends JFrame {
    boolean gamewon = false;
    int gamecounter = 0;
    String buttonLabel;
+   
    public TicTacToe() {
      super();
      frame.setSize(350, 450);
-     frame.setDefaultCloseOperation(EXIT_ON_CLOSE);       
+     frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);       
      frame.setVisible(true);
      frame.setResizable(false);
    }
+   
    public void initialize() {
       JPanel mainPanel = new JPanel(new BorderLayout());
       JPanel menuPanel = new JPanel(new BorderLayout());
